@@ -1,0 +1,49 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "hash": "initial_migration",
+      "snapshot": {
+        "tables": {
+          "todos": {
+            "name": "todos",
+            "schema": "",
+            "columns": {
+              "id": {
+                "name": "id",
+                "type": "serial",
+                "primaryKey": true,
+                "notNull": true
+              },
+              "todo": {
+                "name": "todo",
+                "type": "text",
+                "primaryKey": false,
+                "notNull": true
+              },
+              "created_at": {
+                "name": "created_at",
+                "type": "timestamp",
+                "primaryKey": false,
+                "notNull": true,
+                "default": "now()"
+              },
+              "updated_at": {
+                "name": "updated_at",
+                "type": "timestamp",
+                "primaryKey": false,
+                "notNull": true,
+                "default": "now()"
+              }
+            }
+          }
+        },
+        "enums": {},
+        "schemas": {}
+      }
+    }
+  ]
+}

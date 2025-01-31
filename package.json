@@ -1,0 +1,31 @@
+{
+  "name": "pa_agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit  migrate",
+    "db:drop": "drizzle-kit drop",
+    "db:check": "drizzle-kit check",
+    "db:up": "drizzle-kit up",
+    "studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mastra/core": "^0.1.27-alpha.69",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.30.3",
+    "drizzle-orm": "^0.39.0",
+    "pg": "^8.13.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.19.2"
+  }
+}
